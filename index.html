@@ -7,41 +7,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <title>Frontend Mentor | Profile card component</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          'sans': ['"Kumbh Sans"', 'sans-serif'],
-        },
-        extend: {
-          colors: {
-            'dark-cyan': 'hsl(185, 75%, 39%)',
-            'very-dark-desaturated-blue': 'hsl(229, 23%, 23%)',
-            'dark-grayish-blue': 'hsl(227, 10%, 46%)',
-            'dark-gray': 'hsl(0, 0%, 59%)',
-          },
-          backgroundImage: {
-            'pattern-card': "url('images/bg-pattern-card.svg')",
-            'pattern-top': "url('images/bg-pattern-top.svg')",
-            'pattern-bottom': "url('images/bg-pattern-bottom.svg')",
-          },
-          ringWidth: {
-            '6': '6px',
-          },
-        }
-      }
-    }
-  </script>
 </head>
 <body>
 <!--  background container  -->
-<div class="flex items-center justify-center min-h-screen bg-dark-cyan">
+<div class="flex items-center justify-center min-h-screen body-bg">
   <!--  card container  -->
-  <div class="mx-auto w-[336px] bg-slate-50 rounded-2xl">
+  <div class="mx-6 w-auto bg-slate-50 rounded-2xl">
     <!-- Avatar -->
-    <div class="bg-pattern-card bg-auto bg-no-repeat bg-top rounded-t-xl">
+    <div class="w-[336px] bg-pattern-card bg-auto bg-no-repeat bg-top rounded-t-xl">
       <div class="pt-[92px]">
         <img class="block mx-auto rounded-full ring-6 ring-slate-50" src="images/image-victor.jpg" alt="victor">
       </div>
