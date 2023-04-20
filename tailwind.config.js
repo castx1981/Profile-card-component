@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./index.html"],
   theme: {
-    fontFamily: {
-      'sans': ['"Kumbh Sans"', 'sans-serif'],
-    },
     extend: {
+      fontFamily: {
+        'sans': ['"Kumbh Sans"', 'sans-serif'],
+      },
       colors: {
         'dark-cyan': 'hsl(185, 75%, 39%)',
         'very-dark-desaturated-blue': 'hsl(229, 23%, 23%)',
