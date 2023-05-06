@@ -2,9 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-.body-bg {
-    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
-    background-repeat: no-repeat, no-repeat;
-    background-color: hsl(185deg, 75%, 39%);
+@layer components {
+    .body-bg {
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+        background-repeat: no-repeat, no-repeat;
+        background-color: hsl(185deg, 75%, 39%);
+    }
+
+    .card-bg {
+        background-image: url(./images/bg-pattern-card.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 326px;
+        height: 140px;
+    }
+
+    @media (min-width: 400px) {
+        .card-bg {
+            width: 350px;
+        }
+    }
+
+    .avatar-position {
+        position: absolute;
+        left: calc(50% - 96px / 2);
+        bottom: -48px;
+    }
+
+    .stats {
+        @apply flex-none text-center space-y-2
+    }
+
+    .stats .number {
+        @apply font-bold text-lg/[1.22]
+    }
+
+    .stats .item {
+        @apply text-[0.625rem]/[1.2] tracking-[0.15em] text-darkGrayishBlue
+    }
 }

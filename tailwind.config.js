@@ -7,17 +7,18 @@ module.exports = {
         'sans': ['"Kumbh Sans"', 'sans-serif'],
       },
       colors: {
-        'dark-cyan': 'hsl(185, 75%, 39%)',
-        'very-dark-desaturated-blue': 'hsl(229, 23%, 23%)',
-        'dark-grayish-blue': 'hsl(227, 10%, 46%)',
-        'dark-gray': 'hsl(0, 0%, 59%)',
+        'darkCyan': 'hsl(185, 75%, 39%)',
+        'veryDarkDesaturatedBlue': 'hsl(229, 23%, 23%)',
+        'darkGrayishBlue': 'hsl(227, 10%, 46%)',
+        'darkGray': 'hsl(0, 0%, 59%)',
+        'paleBlue': 'hsl(228, 9%, 92%)',
       },
       backgroundImage: {
-        'pattern-card': "url('images/bg-pattern-card.svg')",
+        'card-pattern': "url('images/bg-pattern-card.svg')",
       },
-      ringWidth: {
-        '6': '6px',
-      },
+      spacing: {
+        '18': '4.5rem',
+      }
     }
   },
   plugins: [],
